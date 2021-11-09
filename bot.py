@@ -9,12 +9,13 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=config.TOKEN)
 dp = Dispatcher(bot)
 
-# echo
-
 
 @dp.message_handler()
 async def echo(message: types.Message):
-    await message.answer(message.text)
+    if message.text == "hello":
+        await message.answer("thx - good day")
+    else:
+        await message.answer(message.text)
 
 
 # run long polling
