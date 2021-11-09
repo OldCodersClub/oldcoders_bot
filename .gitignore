@@ -2,3 +2,4 @@
 .history/
 env_bot/
 __pycache__/
+hendlers/__pycache__/
