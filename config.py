@@ -1,6 +1,5 @@
 import os
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['BOT_TOKEN'])
+s3 = os.environ.get("BOT_TOKEN")
 
 
 # group ids or account ids can be retrieved with @username_to_id_bot
