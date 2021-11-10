@@ -5,8 +5,7 @@
 # BOT_OWNER = "oldcoders_bot"
 # BOT_TOKEN = S3Connection(security_token='BOT_TOKEN')
 
-import boto
-c = boto.connect_s3()
+
 # BOT_TOKEN = c.get_bucket('BOT_TOKEN')
 # BOT_OWNER = c.get_bucket('BOT_OWNER')
 
