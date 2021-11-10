@@ -2,8 +2,7 @@ import os
 from aiogram import types
 from dispatcher import dp
 import config
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['BOT_TOKEN'], os.environ['BOT_OWNER'])
+from config import s3 as s3
 
 
 @dp.message_handler()
