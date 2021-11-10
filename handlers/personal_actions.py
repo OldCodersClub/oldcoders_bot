@@ -14,7 +14,7 @@ async def echo(message: types.Message):
         case "привет Деды":
             await message.answer("И тобе привет старина")
         case "/secret":
-            await message.answer("{s3}")
+            await message.answer(f'{s3}')
 
     # if message.text == "/инфо":
     #     await message.answer("https://github.com/OldCodersClub/faq")
