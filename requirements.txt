@@ -2,3 +2,5 @@ aiogram==2.16
 aiohttp==3.8.0
 aiosignal==1.2.0
 async-timeout==4.0.0
+python-dotenv==0.19.1
+environs==9.3.4
