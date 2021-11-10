@@ -1,7 +1,7 @@
 from aiogram import types
 from dispatcher import dp
 import config
-from config import BOT_OWNER as BOT_OWNER
+from config import BOT_TOKEN as s3
 
 
 @dp.message_handler()
@@ -13,7 +13,7 @@ async def echo(message: types.Message):
         case "привет Деды":
             await message.answer("И тобе привет старина")
         case "/secret":
-            await message.answer(f'{BOT_OWNER}')
+            await message.answer(f'{s3}')
 
     # if message.text == "/инфо":
     #     await message.answer("https://github.com/OldCodersClub/faq")
