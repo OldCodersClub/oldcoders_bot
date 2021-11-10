@@ -5,7 +5,7 @@ import config
 
 @dp.message_handler()
 async def echo(message: types.Message):
-    if message.text == "hello":
-        await message.answer("thx - good day")
-    else:
-        await message.answer(message.text)
+    if message.text == "/инфо":
+        await message.answer("https://github.com/OldCodersClub/faq")
+    # else:
+    #     await message.answer(message.text)
