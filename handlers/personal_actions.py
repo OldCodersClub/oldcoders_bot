@@ -1,7 +1,7 @@
 from aiogram import types
 from dispatcher import dp
 import config
-from config import s3 as s3
+from config import BOT_TOKEN as s3
 
 
 @dp.message_handler()
