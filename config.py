@@ -4,7 +4,7 @@ import os
 # env = Env()
 # env.read_env()
 
-BOT_TOKEN2 = str(os.environ.get('BOT_TOKEN'))+'____'
+BOT_TOKEN2 = str(os.environ.get('BOT_TOKEN'))+'__||__'
 BOT_TOKEN = str(os.environ.get('BOT_TOKEN'))
 
 
