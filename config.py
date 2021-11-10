@@ -1,9 +1,11 @@
+# from environs import Env
 import os
 
-
-async def token():
-    s3 = await os.environ.get('BOT_TOKEN')
-    return s3
-
-BOT_TOKEN = token()
+BOT_TOKEN = os.environ.get(str('BOT_TOKEN'))
 BOT_OWNER = "oldcoders_bot"
+
+
+# env = Env()
+# env.read_env()
+
+# BOT_TOKEN = env.str("BOT_TOKEN")
