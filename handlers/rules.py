@@ -1,3 +1,4 @@
+from typing import Text
 from aiogram import types
 from aiogram.dispatcher.webhook import SendMessage
 from dispatcher import dp
@@ -11,9 +12,9 @@ async def echo(message: types.Message):
         case "/инфо" | "/info":
             await message.answer("https://github.com/OldCodersClub/faq")
         case "/secret":
-            await message.answer(message.chat.id)
+            await message.reply_to_message(id=-780574242, Text="DEMO")
         case "/secret2":
-            return SendMessage(reply_to_message_id=-780574242, text="DEMO")
+            return SendMessage(reply_to_message_id=-780574242, text="DEMO",)
 
     if "привет деды" in message.text.lower():
         await message.answer("И тобе привет Cтарина")
