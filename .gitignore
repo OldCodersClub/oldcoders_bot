@@ -2,3 +2,4 @@
 env_bot/
 __pycache__/
 hendlers/__pycache__/
+.DS_Store
