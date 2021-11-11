@@ -7,7 +7,7 @@ import config
 async def echo(message: types.Message):
 
     match message.text:
-        case "/инфо":
+        case "/инфо" | "/info":
             await message.answer("https://github.com/OldCodersClub/faq")
         case "привет":
             await message.answer("И тобе привет старина")
