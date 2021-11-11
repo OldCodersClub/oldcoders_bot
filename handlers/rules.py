@@ -11,7 +11,7 @@ async def echo(message: types.Message):
         case "/инфо" | "/info":
             await message.answer("https://github.com/OldCodersClub/faq")
         case "/secret":
-            await message.answer(message.text)
+            await message.answer(str(message.chat.id))
 
     if "привет деды" in message.text.lower():
         await message.answer("И тобе привет Cтарина")
