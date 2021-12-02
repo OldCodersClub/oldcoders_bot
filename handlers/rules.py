@@ -10,8 +10,10 @@ async def echo(message: types.Message):
     match message.text.lower():
         case "/инфо" | "/info" | "/инфа" | "/information":
             await message.answer("https://github.com/OldCodersClub/faq")
-        case "/nometa" | "/номета":
+        case "/nometa":
             await message.answer("https://nometa.xyz/")
+        case "/номета":
+            await message.answer("[Пожалуйста, не задавайте мета-вопросов в чате!](https://nometa.xyz/)")
         case "/get_message_id":
             await message.answer(message.chat.id)
 
