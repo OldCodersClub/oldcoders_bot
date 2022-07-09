@@ -21,6 +21,8 @@ async def echo(message: types.Message):
         await message.answer("И тобе привет Cтарина")
     elif "вступил(а) в группу" in message.text.lower():
         await message.answer("Добро пожаловать\nСоветуем ознакомиться с дедовским архивом знаний\n\n\nhttps://github.com/OldCodersClub/faq")
+    elif "алиса, сколько время?" in message.text.lower():
+        await message.answer(datetime.datetime.today().strftime("%H ч %M мин"))
 
 
 # @dp.message_handler(text=["/инфо", "/info"])
