@@ -6,18 +6,18 @@ from datetime import datetime
 import json
 import requests
 
-def btc():
-    key = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
 
-    data = requests.get(key)
-    data = data.json()
-    return f"{data['symbol']} Цена {data['price']}$"
 
 @dp.message_handler()
 async def echo(message: types.Message):
 
 @dp.message_handler()
 async def echo(message: types.Message):
+    def btc():
+        key = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
+        data = requests.get(key)
+        data = data.json()
+        return f"{data['symbol']} Цена {data['price']}$"
 
     match message.text.lower():
         case "/инфо" | "/info" | "/information":
