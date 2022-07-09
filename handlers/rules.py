@@ -8,10 +8,6 @@ from datetime import datetime
 @dp.message_handler()
 async def echo(message: types.Message):
 
-
-@dp.message_handler()
-async def echo(message: types.Message):
-
     match message.text.lower():
         case "/инфо" | "/info" | "/information":
             await message.answer("https://github.com/OldCodersClub/faq")
