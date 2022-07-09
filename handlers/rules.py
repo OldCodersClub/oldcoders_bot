@@ -29,4 +29,10 @@ async def echo(message: types.Message):
     elif "вступил(а) в группу" in message.text.lower():
         await message.answer("Добро пожаловать\nСоветуем ознакомиться с дедовским архивом знаний\n\n\nhttps://github.com/OldCodersClub/faq")
     elif "алиса, сколько время?" in message.text.lower():
-        await message.answer(datetime.today().strftime("%H ч %M мин"))
+        await message.answer("Э, слушай, так некультурно говорить")
+    elif "алиса, сколько времени?" in message.text.lower():
+        await message.answer("По гринвичу "+datetime.today().strftime("%H ч %M мин"))
+    elif "алиса, который час?" in message.text.lower():
+        await message.answer("Mikko Kukanen, это ты такой культурный? По гринвичу"+datetime.today().strftime("%H ч %M мин"))
+
+
