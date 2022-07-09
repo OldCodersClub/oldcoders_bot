@@ -13,8 +13,8 @@ async def echo(message: types.Message):
         case "/get_message_id":
             await message.answer(message.chat.id)
 
-    if "привет деды" in message.text.lower():
-        await message.answer("И тобе привет Cтарина")
+    if "привет" or "добрый день" in message.text.lower():
+        await message.answer("И тобе привет, Cтарина")
     elif "вступил(а) в группу" in message.text.lower():
         await message.answer("Добро пожаловать\nСоветуем ознакомиться с дедовским архивом знаний\n\n\nhttps://github.com/OldCodersClub/faq")
 
