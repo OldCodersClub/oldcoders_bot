@@ -3,8 +3,8 @@ from aiogram.dispatcher.webhook import SendMessage
 from dispatcher import dp
 import config
 from datetime import datetime
-import json
-import requests
+# import json
+# import requests
 
 # def btc():
 #     key = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT"
